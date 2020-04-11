@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.MuiPaper-root.makeStyles-paper-2.MuiPaper-elevation1.MuiPaper-rounded {
+  background: border-box;
+  color: white;
+  font-size: 36px;
+  width: 34px;
+  height: 58px;
+}
