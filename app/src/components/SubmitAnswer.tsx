@@ -25,13 +25,13 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
-export default function SubmitAnswer() {
+export default function SubmitAnswer(answer: number) {
   const classes = useStyles();
   const [inputValue, setInputValue] = useState('');
   const error = /\D/.test(inputValue) ? "Only numbers" : "";
 
   const logAnswer = () => {
-      console.log(inputValue);
+      (parseInt(inputValue) === answer) ? alert('WIN!') : alert('LOOSE!')
   }
 
   return (

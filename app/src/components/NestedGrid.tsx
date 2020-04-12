@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme: Theme) =>
   })
 );
 
-export default function NestedGrid(gameGrid: any[]) {
+export default function NestedGrid(gameGrid: any[], answer: number) {
   const classes = useStyles();
 
   function FormRow() {
@@ -57,7 +57,7 @@ export default function NestedGrid(gameGrid: any[]) {
       <Grid container spacing={1}>
         <Grid container item xs={12} spacing={2}>
           {FormRow()}
-          {SubmitAnswer()}
+          {SubmitAnswer(answer)}
         </Grid>
       </Grid>
     </div>

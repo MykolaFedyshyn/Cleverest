@@ -8,6 +8,7 @@ const marks = ['plus', 'minus', 'multiple', 'divide'];
 const itemValue = getRandomValue(1,9)
 const itemValue2 = getRandomValue(1,9)
 const itemValue3 = getRandomValue(1,9)
+const answer = itemValue + itemValue2 + itemValue3;
 const mark1 = marks[getRandomValue(0,4)]
 const mark2 = marks[getRandomValue(0,4)]
 
@@ -51,6 +52,10 @@ const gameGrid = [
   ]
 ]
 
-export default function getGameGrid() {
+export function getGameGrid() {
     return gameGrid;
+}
+
+export function getAnswer() {
+    return answer;
 }
