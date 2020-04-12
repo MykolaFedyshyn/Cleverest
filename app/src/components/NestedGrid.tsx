@@ -3,6 +3,7 @@ import { makeStyles, createStyles, Theme } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
 import Character from "./Character";
+import SubmitAnswer from "./SubmitAnswer";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -53,9 +54,10 @@ export default function NestedGrid(gameGrid: any[]) {
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={3}>
-        <Grid container item xs={12} spacing={1}>
+      <Grid container spacing={1}>
+        <Grid container item xs={12} spacing={2}>
           {FormRow()}
+          {SubmitAnswer()}
         </Grid>
       </Grid>
     </div>

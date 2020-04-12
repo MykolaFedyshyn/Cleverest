@@ -13,7 +13,7 @@
   }
 }
 
-.App-header {
+.App-body {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -22,6 +22,8 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  overflow: hidden;
+  padding-left: 14px;
 }
 
 .App-link {
@@ -43,4 +45,17 @@
   font-size: 36px;
   width: 34px;
   height: 58px;
+}
+
+.MuiFilledInput-input {
+  padding: 27px 12px 10px;
+  color: white !important;
+}
+
+label#answer-label {
+  color: white !important;
+}
+
+p#answer-helper-text {
+  color: red !important;
 }
